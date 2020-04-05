@@ -1,0 +1,12 @@
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.service\bin\Debug\netstandard2.0\kanbanboard.service.deps.json
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.service\bin\Debug\netstandard2.0\kanbanboard.service.dll
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.service\obj\Debug\netstandard2.0\kanbanboard.service.csprojAssemblyReference.cache
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.service\obj\Debug\netstandard2.0\kanbanboard.service.csproj.CoreCompileInputs.cache
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.service\obj\Debug\netstandard2.0\kanbanboard.service.AssemblyInfoInputs.cache
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.service\obj\Debug\netstandard2.0\kanbanboard.service.AssemblyInfo.cs
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.service\bin\Debug\netstandard2.0\kanbanboard.service.pdb
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.service\bin\Debug\netstandard2.0\kanbanboard.core.dll
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.service\bin\Debug\netstandard2.0\kanbanboard.core.pdb
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.service\obj\Debug\netstandard2.0\kanbanboard.service.csproj.CopyComplete
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.service\obj\Debug\netstandard2.0\kanbanboard.service.dll
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.service\obj\Debug\netstandard2.0\kanbanboard.service.pdb

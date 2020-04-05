@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kanbanboard.api", "kanbanboard.api\kanbanboard.api.csproj", "{B05E351B-C602-42BB-882F-D9B712FE559E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kanbanboard.core", "kanbanboard.core\kanbanboard.core.csproj", "{42C1B8C1-E63E-44E5-ADB1-50295B61ACC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kanbanboard.service", "kanbanboard.service\kanbanboard.service.csproj", "{E96B9151-AF43-4EBF-B90A-9BE2E5A05D92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B05E351B-C602-42BB-882F-D9B712FE559E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05E351B-C602-42BB-882F-D9B712FE559E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05E351B-C602-42BB-882F-D9B712FE559E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05E351B-C602-42BB-882F-D9B712FE559E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C1B8C1-E63E-44E5-ADB1-50295B61ACC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C1B8C1-E63E-44E5-ADB1-50295B61ACC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C1B8C1-E63E-44E5-ADB1-50295B61ACC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C1B8C1-E63E-44E5-ADB1-50295B61ACC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E96B9151-AF43-4EBF-B90A-9BE2E5A05D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96B9151-AF43-4EBF-B90A-9BE2E5A05D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96B9151-AF43-4EBF-B90A-9BE2E5A05D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96B9151-AF43-4EBF-B90A-9BE2E5A05D92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C69F3D4-C15C-4F03-B341-E1C241A14540}
+	EndGlobalSection
+EndGlobal

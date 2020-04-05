@@ -1,0 +1,9 @@
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.core\bin\Debug\netstandard2.0\kanbanboard.core.deps.json
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.core\bin\Debug\netstandard2.0\kanbanboard.core.dll
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.core\obj\Debug\netstandard2.0\kanbanboard.core.csprojAssemblyReference.cache
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.core\obj\Debug\netstandard2.0\kanbanboard.core.csproj.CoreCompileInputs.cache
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.core\obj\Debug\netstandard2.0\kanbanboard.core.AssemblyInfoInputs.cache
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.core\obj\Debug\netstandard2.0\kanbanboard.core.AssemblyInfo.cs
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.core\bin\Debug\netstandard2.0\kanbanboard.core.pdb
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.core\obj\Debug\netstandard2.0\kanbanboard.core.dll
+C:\Users\ben burak\source\repos\kanbanboard.api\kanbanboard.core\obj\Debug\netstandard2.0\kanbanboard.core.pdb

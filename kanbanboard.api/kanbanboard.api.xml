@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>kanbanboard.api</name>
+    </assembly>
+    <members>
+        <member name="M:kanbanboard.api.Controllers.UserController.Login(kanbanboard.core.Entity.User)">
+            <summary>
+            Kullanıcı Giriş İşlemi İçin Kullanılır.
+            </summary>
+            <param name="user">E-Posta ve Şifre Yeterlidir.</param>
+        </member>
+    </members>
+</doc>
