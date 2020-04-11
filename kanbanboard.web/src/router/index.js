@@ -27,9 +27,14 @@ export default new Router({
       component: () => import("@/views/dashboard/view_dashboard"),
     },
     {
-      name: "View_UserProfile",
+      name: "Ayarlar",
       path: "/Ayarlar",
       component: () => import("@/views/settings/View_UserProfile"),
+    },
+    {
+      name:"Bildirimler",
+      path: "/Bildirimler",
+      component: () => import("@/views/notification/view_notifications")
     },
     {
       name: '/*',

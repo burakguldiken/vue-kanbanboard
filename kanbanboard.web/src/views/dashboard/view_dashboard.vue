@@ -106,8 +106,15 @@
     <ul class="drag-list">
       <li class="drag-column" v-for="group in groups" :key="group.id">
         <span class="drag-column-header">
-          <h2>{{ group.name }}</h2>
-          <feather-icon type="more-vertical"></feather-icon>
+          <v-row>
+            <v-col cols="12">
+              <v-card style="background:black">
+                <v-card-text align="center" justify="center">
+                  <h2 class="white--text">{{ group.name }}</h2>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
         </span>
         <vue-draggable-group
           v-model="group.items"
@@ -119,9 +126,9 @@
             <li class="drag-item" v-for="item in group.items" :key="item.id" :data-id="item.id">
               <div class="drag-item-text">{{ item.name }}</div>
               <div class="dot-class">
-                <v-icon style="color:#ff4f00" @click="newTask" small class="mt-4 ml-3" dark>fas fa-check-circle</v-icon>
-                <v-icon style="color:#00a813" @click="newTask" small class="mt-4 ml-2" dark>fas fa-arrow-up</v-icon>
-                <v-icon @click="newTask" small class="mt-4 ml-2" dark>fas fa-ellipsis-h</v-icon>
+                <v-icon style="color:yellow" @click="newTask" small class="mt-4 ml-3">fas fa-check-circle</v-icon>
+                <v-icon style="color:#ff4f00" @click="newTask" small class="mt-4 ml-2" dark>fas fa-arrow-up</v-icon>
+                <v-icon style="color:#00b297" @click="newTask" small class="mt-4 ml-2" dark>fas fa-ellipsis-h</v-icon>
               </div>
             </li>
           </ul>
@@ -262,7 +269,7 @@ ul {
 
 .drag-column {
   flex: 1;
-  margin: 0 5px;
+  margin: 0 2px;
   position: relative;
   background: rgba(rgb(146, 138, 138), 0.2);
   overflow: hidden;
@@ -322,7 +329,8 @@ ul {
 
 .drag-item {
   border-radius: 8px;
-  margin: 10px;
+  margin-right: 15px;
+  margin-top: 10px;
   height: 80px;
   background: rgba(rgb(49, 61, 236), 0.8);
   transition: $ease-out;
