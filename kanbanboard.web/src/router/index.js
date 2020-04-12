@@ -37,6 +37,11 @@ export default new Router({
       component: () => import("@/views/notification/view_notifications")
     },
     {
+      name:"Gecmis",
+      path: "/Gecmis",
+      component: () => import("@/views/history/view_history")
+    },
+    {
       name: '/*',
       path: '/*',
       component: () => import('@/views/errors/404')
