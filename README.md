@@ -1,5 +1,7 @@
 # kanbanboard.web
 
+![alt text](vue-kanbanboard.gif)
+
 ## Project setup
 ```
 npm install
