@@ -29,7 +29,10 @@
         </v-col>
         <v-col cols="6">
           <v-card class="mx-auto white" height="510">
-            <div class="title font-weight-light pa-2 white--text" style="background-color:green">Activities</div>
+            <div class="title font-weight-light pa-2 white--text" style="background-color:green">
+              <v-icon dark class="pa-2">fa fa-history</v-icon>
+              <span>Activities</span>
+            </div>
             <v-divider></v-divider>
         <v-card-text class="py-0">
           <v-timeline align-top dense>

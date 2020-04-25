@@ -335,15 +335,57 @@
     </v-row>
     <v-card class="ma-12">
       <v-row>
-          <div class="black"></div>
+        <div class="black"></div>
       </v-row>
       <template>
-        <v-data-table :headers="headers" :items="desserts" sort-by="calories" class="elevation-1 data-table">
-          <template v-slot:item.actions="{ item }">
-            <v-icon color="black" small class="mr-2" @click="editItem(item)">fa fa-edit</v-icon>
-            <v-icon color="black" small @click="deleteItem(item)">fa fa-trash</v-icon>
-          </template>
-        </v-data-table>
+        <v-card>
+          <v-card-text>
+            <v-row>
+              <v-col cols="12">
+                <v-col cols="12">
+                  <v-row>
+                    <v-col cols="6">
+                      <v-btn fab dark color="#0866C6">
+                        <v-icon dark>fa fa-plus</v-icon>
+                      </v-btn>
+                    </v-col>
+                    <v-col cols="6">
+                      <v-text-field
+                        class="d-flex flex-row-reverse"
+                        v-model="search"
+                        append-icon="fas fa-search"
+                        label="Search"
+                        single-line
+                        hide-details
+                      ></v-text-field>
+                    </v-col>
+                  </v-row>
+                </v-col>
+                <v-col cols="12">
+                  <v-data-table
+                    :headers="headers"
+                    :items="desserts"
+                    sort-by="calories"
+                    class="elevation-1 data-table"
+                    :search="search"
+                  >
+                    <template v-slot:item.actions="{ item }">
+                      <v-btn class="ma-1" small style="background-color:#0866C6">
+                        <v-icon color="white" small @click="editItem(item)">fa fa-edit</v-icon>
+                      </v-btn>
+                      <v-btn class="ma-1" small style="background-color:red">
+                        <v-icon color="white" small @click="deleteItem(item)">fa fa-trash</v-icon>
+                      </v-btn>
+                      <v-btn class="ma-1" small style="background-color:green">
+                        <v-icon color="white" small @click="goProject(item)">fa fa-share</v-icon>
+                      </v-btn>
+                    </template>
+                  </v-data-table>
+                </v-col>
+              </v-col>
+            </v-row>
+          </v-card-text>
+        </v-card>
       </template>
     </v-card>
   </v-container>
@@ -352,6 +394,7 @@
 <script>
 export default {
   data: () => ({
+    search: '',
     time: Date.now(),
     stage: 1,
     dialog: false,
@@ -439,18 +482,22 @@ export default {
     },
 
     deleteItem() {
-        //
+      //
     },
 
     editItem() {
-        //
+      //
+    },
+
+    goProject() {
+      //
     }
   }
 };
 </script>
 
 <style scoped>
-.data-table {
-    border-top: 50px solid #0866C6;
+.card-background {
+  background-color: #0866c6;
 }
 </style>

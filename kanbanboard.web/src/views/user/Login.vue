@@ -1,71 +1,71 @@
+
 <template>
-  <v-container fluid>
-    <v-row>
-      <v-img class="ma-0" :aspect-ratio="16/9" src="">
-      <v-row align="right" justify="center" class="ma-12">
-        <v-col cols="12" lg="3" md="6" sm="12" xs="12">
-          <v-hover v-slot:default="{hover}">
-            <v-card :elevation="hover ? 12 : 2" height="700px">
-              <v-toolbar color="black">
-                <v-col cols="12" class="align-center pa-12">
-                  <v-img class="ma-12" src="@/assets/jira.png"></v-img>
-                </v-col>
-              </v-toolbar>
-              <v-card-text>
-                <v-form v-model="valid" @submit="login">
-                  <v-row>
-                    <v-col cols="12" lg="12" md="12" sm="12" xs="12" class="text-center mt-8 mb-8">
-                      <span class="subtitle-1 black--text">Kullanıcı Girişi</span>
-                    </v-col>
-                    <v-row class="ma-1">
-                      <v-col cols="12">
-                        <v-text-field
-                          @keyup.enter="login"
-                          v-model="user.email"
-                          :rules="emailRules"
-                          label="Email Adresi"
-                          prepend-inner-icon="fa fa-envelope"
-                          type="email"
-                        ></v-text-field>
-                      </v-col>
-                    </v-row>
-                    <v-row class="ma-1">
-                      <v-col cols="12">
-                        <v-text-field
-                          @keyup.enter="login"
-                          v-model="user.password"
-                          :rules="passwordRules"
-                          placeholder="Şifre"
-                          prepend-inner-icon="fa fa-key"
-                          :append-icon="passwordAppendIcon"
-                          :type="passwordTextFieldType"
-                          @click:append="showPassword"
-                        ></v-text-field>
-                      </v-col>
-                    </v-row>
-                    <v-col cols="12" class="mt-5">
-                      <v-btn block rounded color="#ff4f00" :disabled="!valid" @click="login">
-                        <span dark color="white">GİRİŞ</span>
-                        </v-btn>
+  <div class="container-login100">
+    <v-row justify="center" align="center">
+      <v-col cols="6">
+        <v-card>
+          <v-card-text justify="center" align="center">
+            <v-row  justify="center" align="center">
+              <v-col cols="6">
+                  <v-row justify="center" align="center">
+                    <v-col cols="12">
+                      <v-avatar class="avatar" color="grey" size="150">
+                        <v-icon size="50" dark>fa fa-users</v-icon>
+                      </v-avatar>
                     </v-col>
                   </v-row>
-                </v-form>
-              </v-card-text>
-              <v-card-actions>
-                <v-col cols="12 mt-10" class="text-center">
-                  <span class="caption">
-                    © {{ new Date().getFullYear() }} - Jira
-                    <br />Software
-                  </span>
-                </v-col>
-              </v-card-actions>
-            </v-card>
-          </v-hover>
-        </v-col>
-      </v-row>
-      </v-img>
+                  <v-form v-model="valid" @submit="login">
+                  <v-row justify="center" align="center">
+                    <v-col cols="10">
+                      <v-text-field 
+                        label="Email"  
+                        filled rounded dense
+                        @keyup.enter="login"
+                        v-model="user.email"
+                        :rules="emailRules"
+                        prepend-inner-icon="fa fa-envelope"
+                        type="email"
+                      ></v-text-field>
+                      <v-text-field
+                        label="Password"  
+                        filled rounded dense
+                        @keyup.enter="login"
+                        v-model="user.password"
+                        :rules="passwordRules"
+                        prepend-inner-icon="fa fa-lock"
+                        :append-icon="passwordAppendIcon"
+                        :type="passwordTextFieldType"
+                        @click:append="showPassword"
+                      ></v-text-field>
+                      <v-btn 
+                        rounded 
+                        color="green" 
+                        dark
+                        block
+                        large
+                        @click="login"
+                        ><span>LOGIN</span></v-btn>
+                    </v-col>
+                    <v-col cols="10">
+                      <span class="font-weight-bold">Forgot Email/Password?</span>
+                    </v-col>
+                    <v-col cols="10">
+                      <span class="font-weight-bold"><v-icon class="mr-2" small>fa fa-arrow-right</v-icon>Create Account</span>
+                    </v-col>
+                  </v-row>
+                  </v-form>     
+              </v-col>
+              <v-col cols="6">
+                <v-row justify="center" align="center">
+                  <v-icon size="300" color="green">fab fa-vuejs</v-icon>
+                </v-row>
+              </v-col>
+            </v-row>
+          </v-card-text>
+        </v-card>
+      </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 
@@ -122,4 +122,26 @@ export default {
     })
   }
 };
-</script>
+</script>-->
+
+<style scoped>
+.container-login100 {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+</style>
+

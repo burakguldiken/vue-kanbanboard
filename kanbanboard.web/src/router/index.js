@@ -42,6 +42,11 @@ export default new Router({
       component: () => import("@/views/history/view_history")
     },
     {
+      name:"Takım",
+      path: "/Takım",
+      component: () => import("@/views/team/view_team")
+    },
+    {
       name: '/*',
       path: '/*',
       component: () => import('@/views/errors/404')
