@@ -10,7 +10,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
     "apexcharts": "^3.17.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "chartist": "^0.11.4",
     "core-js": "^3.4.4",
     "md-data-table": "^2.2.0",
